@@ -1,0 +1,190 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+  /* background: url(../image/mc\ ad.jpg) no-repeat center center/cover; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  border: border-box;
+  background-color: rgb(182, 179, 231);
+
+}
+
+.spesification-container{
+  display: flex;
+  background: transparent;
+  padding: 20px;
+  box-shadow: 0 2px 3px  5px rgb(92, 87, 87);
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  width: 100vw;
+  max-width: 800px;
+  margin: 50px;
+}
+
+.cal-btn{
+  font-size: 0.8rem;
+  width: 90px;
+  margin-top: 15px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(15, 221, 152);
+}
+
+button{
+  cursor: pointer;
+}
+
+.spesification input{
+  width: 80px;
+  height: 30px;
+  margin-left: 30px;
+}
+
+.spesification select{
+  font-size: 1.05rem;
+  font-weight: lighter;
+  cursor: pointer;
+  background-color: rgba(95, 93, 93, 0.219);
+}
+
+.spesification h1{
+  color: rgb(255, 115, 0);
+  border-bottom: 2px dashed black;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.spesification h3{
+  margin: 10px;
+}
+
+img{
+  align-items: right;
+}
+
+.tabel{
+  font-size: 1.2rem;
+}
+.tabel th{
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  color: rgb(12, 12, 56);
+}
+
+
+
+
+
+.spesification select{
+  height: 40px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  color: rgb(36, 36, 184);
+}
+
+.dir-btn{
+  font-size: 1.1rem;
+  border: none;
+  width: 100px;
+  height: 60px;
+  margin: 5px;
+  padding: 5px;
+  background-color: rgb(255, 115, 0);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.dir-btn:hover{
+  opacity: 0.8;
+  color: white;
+  background-color: #000000;
+} 
+.check-btn{
+  width: 80px;
+  color: white;
+  height: 30px;
+  background-color: rgb(38, 38, 235);
+  border: none;
+  border-radius: 7px;
+  margin:50px 10px;
+  font-size: 1.1rem;
+  align-items: end;
+  transition: 0.3s;
+}
+.check-btn:hover{
+  border: 2px solid rgb(38, 38, 235);
+  background-color: white;
+  color:rgb(38, 38, 235);
+}
+.next-btn{
+  display: flex;
+  justify-content:right ;
+}
+/* for java style ........*/
+
+.type, .color, .area, .area-direction{
+  display: none;
+}
+
+
+#vertical{
+  margin-left: 120px;
+}
+
+
+.result, .refresh{
+  display: flex;
+  width: 90px;
+  color: rgb(255, 255, 255);
+  height: 50px;
+  background-color: rgb(38, 38, 235);
+  border: none;
+  border-radius: 7px;
+  margin-top: 10px;
+  font-size: 1.03rem;
+  align-items: center;
+  transition: 0.3s;
+}
+.result:hover{
+  border: 2px solid rgb(143, 69, 9);
+  background-color: white;
+  color:rgb(38, 38, 235);
+}
+
+.result-btn{
+  display: none;
+  width: 80px;
+  color: white;
+  height: 80px;
+  background-color: rgb(9, 9, 61);
+  border: none;
+  border-radius: 7px;
+  margin-left: 50px;
+  font-size: 1.3rem;
+  transition: 0.6s;
+}
+.result-btn:hover{
+  border: 1px solid rgb(143, 69, 9);
+  background-color: white;
+  color:rgb(38, 38, 235);
+}
+.ads{
+  color: rgb(48, 24, 185);
+  margin: 0px 10px;
+}
+.refresh{
+  margin: 100px 10px;
+}
