@@ -53,7 +53,7 @@ const adhesives = [
     otileType: [ "Local Ceramic", "Imported ceramic", "Local Porcelain", "Imported porcelain"],
     otileColor: ['Ceramic Near black', 'Porcelain Near white', 'Porcelain Near black'],
     oexposureToWater: ['Dry room', 'Wet room', "Swimming pool"],
-    odirection: ['Vertical In House', 'Vertical Outside', 'Horizontal In House', 'Horizontal Outside']
+    odirection: ['', 'Vertical In House', 'Vertical Outside', 'Horizontal In House', 'Horizontal Outside']
 },{
     oname:'M-800 White',
     omaxLength: 120,
@@ -62,5 +62,5 @@ const adhesives = [
     otileType: [ "Local Ceramic", "Imported ceramic", "Local Porcelain", "Imported porcelain"],
     otileColor: ["Ceramic Near white", 'Ceramic Near black', 'Porcelain Near white', 'Porcelain Near black'],
     oexposureToWater: ['Dry room', 'Wet room', "Swimming pool"],
-    odirection: ['Vertical In House', 'Vertical Outside', 'Horizontal In House', 'Horizontal Outside']
+    odirection: ['', 'Vertical In House', 'Vertical Outside', 'Horizontal In House', 'Horizontal Outside']
 }]
