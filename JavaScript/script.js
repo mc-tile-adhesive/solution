@@ -87,14 +87,20 @@ colorBack.addEventListener('click', function(){
 
 let dirValue = direction.value
 areaBtn.addEventListener('click', function (){
-      area.style.display = 'none'
-      areaDirection.style.display = 'block'      
+      if(exposureToWater.value.includes('Swimming pool')){
+        direction.value = ''
+        finalResultShow()
+      }else{
+        area.style.display = 'none'
+        areaDirection.style.display = 'block'
+      }
     })
 areaBack.addEventListener('click', function (){
   area.style.display = 'none'
   color.style.display= 'block'
 })
 resultViewerbtn.addEventListener('click', finalResultShow)
+
 directionBack.addEventListener('click', function (){
   area.style.display = 'block'
   areaDirection.style.display = 'none'
