@@ -130,7 +130,7 @@ const finalProduct = document.getElementById('final-product')
         <button class = 'refresh'; onclick = refresh() >Check again</button>
         `;
       }else if(selected.length === 1){
-        resultViewer.innerHTML = `Only ${selected.slice(0, 1)}
+        resultViewer.innerHTML = `Only <h3 class="ads">${selected.slice(0, 1)}</h3>
         <button class = 'refresh'; onclick = refresh() >Check again</button>`
       } else {
         resultViewer.innerHTML = `No suitable adhesive found. 
