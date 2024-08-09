@@ -18,6 +18,7 @@ const type = document.querySelector('.type');
 const color = document.querySelector('.color');
 const area = document.querySelector('.area');
 const areaDirection = document.querySelector('.area-direction');
+const attention = document.querySelector('.attention')
 //.............VARIABELS FOR SELECTED ...........
 const tileWidth = document.getElementById('tile-width')
 const tileLength = document.getElementById('tile-length')
@@ -71,6 +72,7 @@ areaBtn.addEventListener('click', function (){
       if(exposureToWater.value.includes('Swimming pool')){
         direction.value = ''
         finalResultShow()
+        
       }else{
         area.style.display = 'none'
         areaDirection.style.display = 'block'
@@ -88,9 +90,9 @@ directionBack.addEventListener('click', function (){
 //-------------result functions---------
 function finalResultShow(){
   resultViewer.innerHTML = `<div class="spesification">
-   <h1>You selected</h1>
+   <h1>Selection Summary</h1>
    <table class="tabel">
-    <tr><th>Area</th><td>${tileAreaRes}</td>
+    <tr><th>Area</th><td>${tileLengthValue}cm X ${tilewidthValue}cm</td>
     </tr>
     <tr><th>Thickness</th><td>${tileThickness.value}</td>
     </tr>
@@ -126,11 +128,11 @@ const finalProduct = document.getElementById('final-product')
         .map(adhesive => adhesive.oname);
        if (selected.length > 1) {
         resultViewer.innerHTML = ` 
-        <h3> You can use <h3 class="ads"> ${selected.slice(0, 1)} </h3>  <h3>or</h3>  <h3 class="ads"> ${selected.slice(1, 2)} </h3> <br> 
-        <button class = 'refresh'; onclick = refresh() >Check again</button>
+        <div style='font-size: 30px';> <h3 style='text-align:center; margin-top: 300px;'> You can use <h3 class="ads"> ${selected.slice(0, 1)} </h3>  <h3 style='text-align:center;'>or</h3>  <h3 class="ads"> ${selected.slice(1, 2)} </h3><br> 
+        <button class = 'refresh'; onclick = refresh() >Check again</button></div> 
         `;
       }else if(selected.length === 1){
-        resultViewer.innerHTML = `Only <h3 class="ads">${selected.slice(0, 1)}</h3>
+        resultViewer.innerHTML = `<h3 style='text-align:center; margin-top: 100px;'>Only <h3 class="ads">${selected.slice(0, 1)}</h3></h3>
         <button class = 'refresh'; onclick = refresh() >Check again</button>`
       } else {
         resultViewer.innerHTML = `No suitable adhesive found. 
