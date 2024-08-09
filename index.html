@@ -6,7 +6,13 @@
   <link rel="stylesheet" href="Css/style.css">
   <title>Select tile adhesive</title>
 </head>
-<body>    
+<body> <div class="logo">
+  <img src="image/logo.jpg" alt="">
+</div>
+
+      <div class="titel">
+        <h2>Select your Best Tile adhesive with <span class="name-titel">MC-Bauchemie</span></h2>
+      </div>
       <div class="spesification-container" id="spesification-container" >
         
          <div class="spesification size">
@@ -22,6 +28,7 @@
               <div class="tile-length">
                 <h2>Tile Length</h2>
                 <input name="tile-length" id="tile-length" type="number" min="10" max="120" placeholder="10-120cm">
+                
               </div>
               <h2 id="area-result" style="color:rgb(26, 26, 59)"></h2>
               
@@ -30,14 +37,15 @@
               <select name="thickness" id="tile-thickness">
                 <option value="0.5">0.5</option>
                 <option value="0.6-1">0.6-1</option>
-              </select>
+              </select>              
               <div class="next-btn">
                 <button id="size-btn" class="check-btn">Next</button>
               </div>
               </div>
-            </div>
+            </div> 
           </div>
         </div>
+       
 
 
         <div class="spesification type">
@@ -97,8 +105,8 @@
 
         <div class="spesification area-direction">    
             <div id="application-area" class="application-area">
-              <h1>Application area direction</h1>
-             
+              <h1>Application area</h1>
+              <h3 id="test-result">Direction</h3>
               <!-- <button id="vertical-btn" class="dir-btn">Vertical</button><br> -->
               <select name="horizontal" id="direction">
                 <option value="Vertical In House">Vertical In house</option>
@@ -113,8 +121,16 @@
             </div>
           </div>
         </div>
+        <div class="attention">
+          <h4>Please consult MC-technical team for the following reasons</h4>
+          <ul>
+            <li>If you encounter Natural stone or Glass tiles.</li>
+            <li>If one side of the tile is higher than 120 cm.</li>
+            <li>If the thickness of the tile is above 1 cm.</li>
+          </ul>
+        </div>
+
         <script src="JavaScript/data.js"></script>
       <script src="JavaScript/script.js"></script>
 </body>
 </html>
-
