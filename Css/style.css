@@ -43,7 +43,7 @@ margin-right: 4%;
   justify-content: right;
 }
 .attention, ul{
-  font-size: 25px;
+  font-size: 15px;
   list-style-type: circle;
   color: rgb(109, 34, 34);
   margin: 30px 30px;
