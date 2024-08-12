@@ -212,14 +212,13 @@ img{
 }
 .ads{
   color: rgb(255, 0, 0);
-  margin: 20px 10px;
   border-bottom: dashed white;
   border-width:1px ;
   font-size: 30px;
   font-weight: 800;
 }
 .ads h3{
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .refresh{
   margin: 100px 10px;
@@ -236,5 +235,5 @@ img{
 /* The element to apply the animation to */
 select {
   animation-name: example;
-  animation-duration: 0.4s;
+  animation-duration: 0.5s;
 }
