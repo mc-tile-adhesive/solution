@@ -72,7 +72,6 @@ areaBtn.addEventListener('click', function (){
       if(exposureToWater.value.includes('Swimming pool')){
         direction.value = ''
         finalResultShow()
-        
       }else{
         area.style.display = 'none'
         areaDirection.style.display = 'block'
