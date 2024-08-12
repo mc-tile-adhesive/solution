@@ -49,7 +49,7 @@ sizeBtn.addEventListener('click', function(){
       tileLength.value = ''
       tileWidth.value = ''     }
   }else{
-    areaResult.innerHTML = "<p  style=' font-size:14px; color:red'> Insert width and length from 10 to 120</p>"}})
+    areaResult.innerHTML = "<p  style=' font-size:14px; color:red'>Please consult MC-technical team If one side of the tile is higher than 120 cm.</p>"}})
 typeBtn.addEventListener('click', function(){
   color.style.display = 'block'
   type.style.display= 'none'
