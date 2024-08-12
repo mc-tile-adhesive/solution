@@ -129,11 +129,11 @@ const finalProduct = document.getElementById('final-product')
         .map(adhesive => adhesive.oname);
        if (selected.length > 1) {
         resultViewer.innerHTML = ` 
-        <div style='font-size: 30px';> <h3 style='text-align:center; margin-top: 100px;'> You can use <h3 class="ads"> ${selected.slice(0, 1)} </h3>  <h3 style='text-align:center;'>or</h3>  <h3 class="ads"> ${selected.slice(1, 2)} </h3><br> 
+        <div style='font-size: 30px';> <h3 style='text-align:center; margin-top: 10px;'> You can use <h3 class="ads"> ${selected.slice(0, 1)} </h3>  <h3 style='text-align:center;'>or</h3>  <h3 class="ads"> ${selected.slice(1, 2)} </h3><br> 
         <button class = 'refresh'; onclick = refresh() >Back to Home</button></div> 
         `;
       }else if(selected.length === 1){
-        resultViewer.innerHTML = `<h3 style='text-align:center; margin-top: 100px;'> <h3 class="ads">Only ${selected.slice(0, 1)}</h3></h3>
+        resultViewer.innerHTML = `<h3 style='text-align:center; margin-top: 10px;'> <h3 class="ads">Only ${selected.slice(0, 1)}</h3></h3>
         <button class = 'refresh'; onclick = refresh() >Back to Home</button>`
       } else {
         resultViewer.innerHTML = `No suitable adhesive found. 
