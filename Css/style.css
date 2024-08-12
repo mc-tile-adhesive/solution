@@ -230,6 +230,7 @@ select {
 
 .attention{
   width: 500px;
+  max-width:30vw;
   justify-content: right;
 }
 .attention, ul{
