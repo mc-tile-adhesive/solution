@@ -230,7 +230,6 @@ select {
 
 .attention{
   width: 500px;
-  max-width:30vw;
   justify-content: right;
 }
 .attention, ul{
@@ -243,19 +242,27 @@ select {
   margin: 10px;
 }
 
-.address{
-  margin-left: 70vw;
-  margin-top: -90px;
+.address h3{
+  margin-top: 10px;
+  margin-left: 15vw;
+  margin-bottom: 10px;
 }
 .address-phone{
   font-size: 11px;
   color: blue;
   list-style: none;
 }
+.address{
+  margin-left: 50%;
+  border: #00000063 2px solid;
+  box-shadow: 0 2px 1.5px  2px rgb(92, 87, 87);
+  margin-right: 2%;
+  font-size: 12px;
+
+}
 
 .address h3{
-  border-bottom: #000000 1px solid;
-  width: 200px;
+  font-size: 10px;
 }
 .img2{
   width: 100vw;
