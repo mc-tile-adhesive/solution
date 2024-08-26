@@ -12,6 +12,7 @@ body{
   border: border-box;
   background: rgb(255, 255, 255);
   font-size: 18px;
+  width: 100vw;
 }
 
 .titel h2{
@@ -53,7 +54,7 @@ position: absolute;
   justify-content: center;
   align-items: center;
   color: rgb(12, 12, 12);
-  width: 500vw;
+  width: 90vw;
   max-width: 80vw;
   margin-left: 10%;
   min-height: 300px;
@@ -96,12 +97,12 @@ img{
 }
 
 .tabel{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .tabel th{
   display: flex;
-  padding: 10px;
-  margin: 10px;
+  padding: 2px;
+  margin: 5px;
   color: rgb(12, 12, 56);
 }
 
@@ -142,6 +143,7 @@ img{
   font-size: 1.1rem;
   align-items: end;
   transition: 0.3s;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 255, 0.1);
 }
 .check-btn:hover{
   /* border: 2px solid rgb(38, 38, 235); */
@@ -244,25 +246,26 @@ select {
 
 .address h3{
   margin-top: 10px;
-  margin-left: 15vw;
+  margin-left: 25%;
   margin-bottom: 10px;
 }
 .address-phone{
-  font-size: 11px;
-  color: blue;
+  font-size: 121px;
   list-style: none;
 }
 .address{
-  margin-left: 50%;
   border: #00000063 2px solid;
   box-shadow: 0 2px 1.5px  2px rgb(92, 87, 87);
-  margin-right: 2%;
   font-size: 12px;
+  margin-bottom: 50px;
 
 }
 
 .address h3{
-  font-size: 10px;
+  width: 110px;
+  font-size: 16px;
+  border-bottom: #000000 dashed;
+  border-width: 1px;
 }
 .img2{
   width: 100vw;
