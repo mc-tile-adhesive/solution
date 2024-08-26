@@ -130,13 +130,25 @@ const finalProduct = document.getElementById('final-product')
        if (selected.length > 1) {
         resultViewer.innerHTML = ` 
         <div style='font-size: 30px';> <h3 style='text-align:center; margin-top: 100px;'> You can use <h3 class="ads"> ${selected.slice(0, 1)} </h3>  <h3 style='text-align:center;'>or</h3>  <h3 class="ads"> ${selected.slice(1, 2)} </h3><br> 
+        ${adrs}
         <button class = 'refresh'; onclick = refresh() >Back to Home</button></div> 
         `;
       }else if(selected.length === 1){
-        resultViewer.innerHTML = `<h3 style='text-align:center; margin-top: 100px;'> <h3 class="ads">Only ${selected.slice(0, 1)}</h3></h3>
-        <button class = 'refresh'; onclick = refresh() >Back to Home</button>`
+        resultViewer.innerHTML = `<div style='font-size: 30px';><h3 style='text-align:center; margin-top: 100px;'>Only <h3 class="ads"> ${selected.slice(0, 1)}</h3></h3>
+      <br>${adrs}
+      <button class = 'refresh'; onclick = refresh() >Back to Home</button></div>`
       } else {
         resultViewer.innerHTML = `No suitable adhesive found. 
         <button class = 'refresh'; onclick = refresh() >Back to Home</button>`;
       }
     }
+
+    const adrs = `  <div class="address">
+            <h3>Our Sales Office</h3>
+            <address>
+              Lebu, Tel: +25111111111, <br>
+              Ayat, Tel: +25111111111, <br>
+              Bulbula, Tel: +25111111111 <br>
+            </address>
+            <img src="" alt="">
+        </div>`
