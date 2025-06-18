@@ -143,4 +143,11 @@ const finalProduct = document.getElementById('final-product')
       }
     }
 
-    
+    const adrs = `  <div class="address">
+            <h3>Our Sales Office</h3>
+            <address>
+              Furi, Tel: +25111111111, <br>
+              Ayat, Tel: +25111111111, <br>
+              Bulbula, Tel: +25111111111 <br>
+            </address>
+        </div>`
