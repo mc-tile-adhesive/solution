@@ -2,110 +2,65 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family:'Franklin Gothic small ', 'Arial Narrow', Arial, sans-serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 body{
+  /* background: url(../image/mc\ ad.jpg) no-repeat center center/cover; */
+  display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   min-height: 100vh;
   border: border-box;
-  background: rgb(255, 255, 255);
-  font-size: 18px;
-  width: 100vw;
+  background-color: rgb(182, 179, 231);
 }
-
-.titel h2{
-  margin: 30px;
-  text-align: center;
-  font-size: 25px;
-  font-weight: 900;
-}
-.titel span{
-  
-  color: rgb(50, 50, 230);
-}
-
-.logo{
-display: block;
-top: 0;
-right: 0;
-margin-right: 4%;
-position: absolute;
-}
-
-.logo img{
-  max-width: 200px;
-  min-width: 150;
-  padding: 30px;
-}
-
-
-
 .spesification-container{
-  border-style: inset;
-  border-width: 5px ;
-  border-color: rgba(255, 166, 0, 0.788);
-  border-bottom: none;
   display: flex;
-  background: linear-gradient(rgb(24, 104, 209), rgb(24, 104, 209, 0.4));
-  padding: 0px;
+  background: transparent;
+  padding: 20px;
   box-shadow: 0 2px 3px  5px rgb(92, 87, 87);
   justify-content: center;
   align-items: center;
-  color: rgb(12, 12, 12);
-  width: 90vw;
-  max-width: 80vw;
-  margin-left: 10%;
-  min-height: 300px;
+  color: rgb(0, 0, 0);
+  width: 100vw;
+  max-width: 800px;
+  margin: 50px;
 }
-
 button{
   cursor: pointer;
 }
-
 .spesification input{
-  width: 100px;
-  height: 50px;
+  width: 80px;
+  height: 30px;
   margin-left: 30px;
 }
-
 .spesification select{
-  justify-content: center;
-  align-items: center;
-  font-size: 1004px;
+  font-size: 1.05rem;
   font-weight: lighter;
   cursor: pointer;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(95, 93, 93, 0.219);
 }
-
 .spesification h1{
-  font-size: 35px;
   color: rgb(255, 115, 0);
-  border-bottom: 1px dashed rgb(172, 168, 168);
+  border-bottom: 2px dashed black;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   margin-top: 10px;
 }
-
 .spesification h3{
   margin: 10px;
 }
-
 img{
   align-items: right;
 }
-
 .tabel{
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 .tabel th{
   display: flex;
-  padding: 2px;
-  margin: 5px;
+  padding: 10px;
+  margin: 10px;
   color: rgb(12, 12, 56);
 }
-
 .spesification select{
   height: 40px;
   font-size: 1rem;
@@ -114,7 +69,6 @@ img{
   padding: 8px;
   color: rgb(36, 36, 184);
 }
-
 .dir-btn{
   font-size: 1.1rem;
   border: none;
@@ -126,7 +80,6 @@ img{
   border-radius: 5px;
   transition: 0.3s;
 }
-
 .dir-btn:hover{
   opacity: 0.8;
   color: white;
@@ -143,32 +96,25 @@ img{
   font-size: 1.1rem;
   align-items: end;
   transition: 0.3s;
-  box-shadow: 4px 4px 4px 4px rgba(0, 0, 255, 0.1);
 }
 .check-btn:hover{
-  /* border: 2px solid rgb(38, 38, 235); */
+  border: 2px solid rgb(38, 38, 235);
   background-color: white;
   color:rgb(38, 38, 235);
 }
 .next-btn{
   display: flex;
-  justify-content: right ;
+  justify-content:right ;
 }
-/* for java style ........*/
-
 .type, .color, .area, .area-direction{
   display: none;
 }
-
-
 #vertical{
   margin-left: 120px;
 }
-
-
 .result, .refresh{
   display: flex;
-  width: 100px;
+  width: 90px;
   color: rgb(255, 255, 255);
   height: 50px;
   background-color: rgb(38, 38, 235);
@@ -184,7 +130,6 @@ img{
   background-color: white;
   color:rgb(38, 38, 235);
 }
-
 .result-btn{
   display: none;
   width: 80px;
@@ -197,78 +142,15 @@ img{
   font-size: 1.3rem;
   transition: 0.6s;
 }
-.result-btn, .refresh:hover{
-  border: none;
+.result-btn:hover{
+  border: 1px solid rgb(143, 69, 9);
   background-color: white;
   color:rgb(38, 38, 235);
 }
 .ads{
-  color: White;
-  border-bottom: dashed white;
-  border-width:1px ;
-  font-size: 50px;
-  font-weight: 800;
-}
-.ads h3{
-  margin-top: 10px;
+  color: rgb(48, 24, 185);
+  margin: 0px 10px;
 }
 .refresh{
-  margin: 10px 10px;
-  text-align: center;
-  justify-content: center;
-  font-size: 20px;
-} 
-
-@keyframes example {
-  from {background-color: rgb(0, 89, 255);}
-  to {}
-}
-
-/* The element to apply the animation to */
-select {
-  animation-name: example;
-  animation-duration: 0.5s;
-}
-
-.attention{
-  width: 500px;
-  justify-content: right;
-}
-.attention, ul{
-  font-size: 15px;
-  list-style-type: disc;
-  color: rgb(109, 34, 34);
-  margin: 10px 30px;
-}
-.attention, h4{
-  margin: 10px;
-}
-
-.address h3{
-  margin-top: 10px;
-  margin-left: 25%;
-  margin-bottom: 10px;
-}
-.address-phone{
-  font-size: 121px;
-  list-style: none;
-}
-.address{
-  border: #00000063 2px solid;
-  box-shadow: 0 2px 1.5px  2px rgb(92, 87, 87);
-  font-size: 12px;
-  margin-bottom: 50px;
-
-}
-
-.address h3{
-  width: 110px;
-  font-size: 16px;
-  border-bottom: #000000 dashed;
-  border-width: 1px;
-}
-.img2{
-  width: 100vw;
-  height: 150px;
-  opacity: 0.5;
+  margin: 100px 10px;
 }
