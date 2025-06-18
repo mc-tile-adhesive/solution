@@ -18,7 +18,6 @@ const type = document.querySelector('.type');
 const color = document.querySelector('.color');
 const area = document.querySelector('.area');
 const areaDirection = document.querySelector('.area-direction');
-const attention = document.querySelector('.attention')
 //.............VARIABELS FOR SELECTED ...........
 const tileWidth = document.getElementById('tile-width')
 const tileLength = document.getElementById('tile-length')
@@ -36,7 +35,8 @@ let tileLengthValue = 0
 //---------FUNCTION-------------
 let tileAreaRes = 0;
 function areaCalculate(){
-  tileAreaRes = tileLength.value * tileWidth.value}
+  tileAreaRes = tileLength.value * tileWidth.value
+}
 sizeBtn.addEventListener('click', function(){
   areaCalculate();
   if(tileWidth.value > 9 && tileWidth.value  < 121 &&
@@ -47,11 +47,11 @@ sizeBtn.addEventListener('click', function(){
       type.style.display = 'block'
       size.style.display= 'none'
       tileLength.value = ''
-      tileWidth.value = ''     }
-  }if(tileWidth.value == 0 || tileLength.value == 0){
-    areaResult.innerHTML ="<p  style=' font-size:14px; color:red'> Insert tile length and width</p>"
-  }else{
-    areaResult.innerHTML = "<p  style=' font-size:14px; color:red'>Please consult MC-technical team If one side of the tile is higher than 120 cm.</p>"}})
+      tileWidth.value = ''
+     }}else{
+    areaResult.innerHTML = "<p  style=' font-size:14px; color:red'> Insert width and length from 10 to 120cm</p>"
+  }  
+})
 typeBtn.addEventListener('click', function(){
   color.style.display = 'block'
   type.style.display= 'none'
@@ -77,8 +77,7 @@ areaBtn.addEventListener('click', function (){
       }else{
         area.style.display = 'none'
         areaDirection.style.display = 'block'
-      }
-    })
+      }})
 areaBack.addEventListener('click', function (){
   area.style.display = 'none'
   color.style.display= 'block'
@@ -91,20 +90,14 @@ directionBack.addEventListener('click', function (){
 //-------------result functions---------
 function finalResultShow(){
   resultViewer.innerHTML = `<div class="spesification">
-   <h1>Selection Summary</h1>
+   <h1>You selected</h1>
    <table class="tabel">
-    <tr><th>Area</th><td>${tileLengthValue}cm X ${tilewidthValue}cm</td>
-    </tr>
-    <tr><th>Thickness</th><td>${tileThickness.value}</td>
-    </tr>
-    <tr><th>Tile Type</th><td>${tileType.value}</td>
-    </tr>
-    <tr><th>Color</th><td>${tileColor.value}</td>
-    </tr>
-    <tr><th>Exposure to water</th><td>${exposureToWater.value}</td>
-    </tr>
-    <tr><th>Application area direction</th><td>${direction.value}</td>
-    </tr>
+    <tr> <th>Area</th> <td>${tileAreaRes}</td>< /tr>
+    <tr> <th>Thickness</th> <td>${tileThickness.value}</td> </tr>
+    <tr> <th>Tile Type</th> <td>${tileType.value}</td> </tr>
+    <tr> <th>Color</th> <td>${tileColor.value}</td> </tr>
+    <tr> <th>Exposure to water</th> <td>${exposureToWater.value}</td> </tr>
+    <tr> <th>Application area direction</th> <td>${direction.value}</td> </tr>
   </table> 
   <button class="check-btn" onclick="product()">Select</button>
   <h3 id='final-product'></h3>
@@ -124,30 +117,18 @@ const finalProduct = document.getElementById('final-product')
           adhesive.otileType.includes(tileType.value) &&
           adhesive.otileColor.includes(tileColor.value) &&
           adhesive.oexposureToWater.includes(exposureToWater.value) &&
-          adhesive.odirection.includes(direction.value)
-        )
+          adhesive.odirection.includes(direction.value))
         .map(adhesive => adhesive.oname);
        if (selected.length > 1) {
         resultViewer.innerHTML = ` 
-        <div style='font-size: 30px';> <h3 style='text-align:center; margin-top: 100px;'> You can use <h3 class="ads"> ${selected.slice(0, 1)} </h3>  <h3 style='text-align:center;'>or</h3>  <h3 class="ads"> ${selected.slice(1, 2)} </h3><br> 
-        ${adrs}
-        <button class = 'refresh'; onclick = refresh() >Back to Home</button></div> 
+        <h3> You can use <h4 class="ads"> ${selected.slice(0, 1)} </h4>  <h4>or</h4>  <h4 class="ads"> ${selected.slice(1, 2)} </h4> <br> 
+        <button class = 'refresh'; onclick = refresh() >Check again</button>
         `;
       }else if(selected.length === 1){
-        resultViewer.innerHTML = `<div style='font-size: 30px';><h3 style='text-align:center; margin-top: 100px;'>Only <h3 class="ads"> ${selected.slice(0, 1)}</h3></h3>
-      <br>${adrs}
-      <button class = 'refresh'; onclick = refresh() >Back to Home</button></div>`
+        resultViewer.innerHTML = `Only ${selected.slice(0, 1)}
+        <button class = 'refresh'; onclick = refresh() >Check again</button>`
       } else {
         resultViewer.innerHTML = `No suitable adhesive found. 
-        <button class = 'refresh'; onclick = refresh() >Back to Home</button>`;
+        <button class = 'refresh'; onclick = refresh() >Check again</button>`;
       }
     }
-
-    const adrs = `  <div class="address">
-            <h3>Our Sales Office</h3>
-            <address>
-              Furi, Tel: +25111111111, <br>
-              Ayat, Tel: +25111111111, <br>
-              Bulbula, Tel: +25111111111 <br>
-            </address>
-        </div>`
